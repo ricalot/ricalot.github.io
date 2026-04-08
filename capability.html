@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capability Statement | Regional Integrated Consultancy</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
+    
+    :root {
+        --primary: #1aab9b;        /* Teal arc from RIC logo */
+        --primary-dark: #148a7d;   /* Darker teal for hover/depth */
+        --charcoal: #3d4448;       /* Letterform charcoal from RIC logo */
+        --light-teal: #e6f7f5;     /* Light teal background wash */
+        --mid-teal: #d0eeeb;       /* Border / divider teal */
+        --text-dark: #3d4448;      /* Matches charcoal */
+        --text-gray: #4a6665;      /* Complementary muted teal-grey */
+    }
+    
+    body {
+        background-color: #e0e0e0;
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .page {
+        width: 210mm;
+        height: 297mm;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        position: relative;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    
+    /* ------------- PAGE 1 TOP ------------- */
+    .top-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 50px 15px 50px;
+        border-bottom: 3px solid var(--mid-teal);
+        margin-bottom: 5px;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .logo-container img {
+        height: 56px;
+        width: auto;
+    }
+    .company-name {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 18px;
+        color: var(--charcoal);
+        letter-spacing: 0.5px;
+        line-height: 1.1;
+    }
+    .company-name span {
+        display: block;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--primary);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 2px;
+    }
+    
+    .hero-section {
+        position: relative;
+        height: 330px;
+    }
+    .capability-box {
+        background-color: var(--primary);
+        color: white;
+        padding: 30px 40px;
+        width: 48%;
+        margin-top: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 2;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    .capability-box h1 {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        font-size: 30px;
+        line-height: 1.25;
+        letter-spacing: 1px;
+    }
+    .circle-image {
+        position: absolute;
+        right: 40px;
+        top: -60px;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        border: 20px solid var(--mid-teal);
+        background-color: white;
+        background-image: url('assets/images/profile_portrait.png');
+        background-size: 85%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        z-index: 1;
+    }
+
+    /* ------------- PAGE 1 CONTENT ------------- */
+    .content-area-1 {
+        padding: 0 50px;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .section-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: var(--text-dark);
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    hr.short-line {
+        border: none;
+        height: 3px;
+        background-color: var(--primary);
+        width: 40px;
+        margin: 0 0 10px 0;
+    }
+
+    .overview-text {
+        width: 45%;
+        font-size: 12px;
+        line-height: 1.6;
+        color: var(--text-gray);
+        margin-top: -60px;
+        text-align: justify;
+    }
+
+    .services-section {
+        margin-top: 30px;
+    }
+    .services-title-wrapper {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .services-title-wrapper h2 {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: var(--text-dark);
+        font-size: 18px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 25px;
+    }
+    
+    .service-item {
+        display: flex;
+        align-items: flex-start;
+    }
+    .service-icon {
+        width: 40px;
+        height: 40px;
+        background-color: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+        flex-shrink: 0;
+        margin-right: 12px;
+    }
+    h3.service-title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        color: var(--text-dark);
+        font-size: 13px;
+        margin: 0 0 6px 0;
+        text-transform: uppercase;
+    }
+    .service-item p {
+        font-size: 11.5px;
+        line-height: 1.5;
+        color: var(--text-gray);
+        margin: 0;
+        text-align: justify;
+    }
+
+    .competencies-section {
+        margin-top: 35px;
+        text-align: center;
+    }
+    .competencies-list {
+        text-align: left;
+        font-size: 11.5px;
+        color: var(--text-gray);
+        display: inline-block;
+        padding-left: 20px;
+        margin: 0 auto;
+        font-weight: 600;
+    }
+    .competencies-list li { margin-bottom: 5px; }
+
+    /* ------------- PAGE 1 FOOTER ------------- */
+    .footer-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--charcoal);
+        color: white;
+        padding: 15px 50px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    .footer-bar .contact-item {
+        display: flex;
+        align-items: center;
+    }
+    .footer-bar .contact-item span.icon {
+        margin-right: 8px;
+        font-size: 14px;
+    }
+    .footer-bar-left { display: flex; gap: 30px; }
+
+    /* ------------- PAGE 2 ------------- */
+    .p2-header-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 500px;
+        z-index: 1;
+    }
+    .p2-content {
+        position: relative;
+        z-index: 2;
+        padding: 50px;
+        display: flex;
+        gap: 50px;
+    }
+    .p2-left {
+        width: 50%;
+        color: white;
+        padding-top: 30px;
+    }
+    .p2-left h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        margin-top: 0;
+    }
+    .p2-left ul {
+        font-size: 12px;
+        line-height: 1.6;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+    .p2-left ul li { margin-bottom: 12px; }
+
+    .p2-right {
+        width: 50%;
+        text-align: left;
+        padding-top: 150px; /* Offset to clear curve visual */
+    }
+    .p2-right h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: var(--text-dark);
+        margin-top: 0;
+    }
+    .p2-right ol {
+        font-size: 12px;
+        line-height: 1.6;
+        color: var(--text-gray);
+        margin-top: 20px;
+        padding-left: 15px;
+    }
+    .p2-right ol li { margin-bottom: 12px; }
+    
+    .p2-bottom {
+        position: relative;
+        z-index: 2;
+        padding: 0 50px;
+        margin-top: 40px;
+    }
+    .p2-bottom h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: var(--primary);
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+    .p2-bottom p {
+        font-size: 12px;
+        color: var(--text-gray);
+        line-height: 1.6;
+        text-align: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .p2-footer {
+        background-color: var(--charcoal);
+        color: white;
+    }
+
+    @media print {
+        body { margin: 0; padding: 0; background: none; gap: 0; }
+        .page { box-shadow: none; margin: 0; border: none; }
+        .page:nth-child(n+2) { page-break-before: always; }
+    }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page page-1">
+    <div class="top-header">
+        <div class="logo-container">
+            <img src="assets/images/logo_hq_transparent.png" alt="Regional Integrated Consultancy Logo">
+            <div class="company-name">
+                Regional Integrated Consultancy
+                <span>Practical Strategic Counsel for Regional WA</span>
+            </div>
+        </div>
+        <div style="font-family: 'Montserrat', sans-serif; font-size: 11px; color: var(--text-gray); text-align: right; line-height: 1.6;">
+            <strong style="color: var(--charcoal);">CAPABILITY STATEMENT</strong>
+        </div>
+    </div>
+    
+    <div class="hero-section">
+        <div class="capability-box">
+            <h1>CAPABILITY<br>STATEMENT</h1>
+        </div>
+        <div class="circle-image"></div>
+    </div>
+    
+    <div class="content-area-1">
+        <div class="overview-text">
+            <div class="contact-info">
+                <p>Partner with us to build resilient, successful regional communities.</p>
+                <p><strong>Regional Integrated Consultancy</strong></p>
+                <p>Email: ric.halse@localto.support &nbsp;|&nbsp; LinkedIn: linkedin.com/in/richardhalse &nbsp;|&nbsp; Mob: +61 485 864 247</p>
+            </div>
+            <div class="section-title">COMPANY OVERVIEW</div>
+            <hr class="short-line">
+            <p><strong>Regional Integrated Consultancy (RIC)</strong> stands out as a premier provider of practical, hands-on support and strategic advisory services. We focus on providing customized solutions to Local Governments and regional organizations across Western Australia. We blend technical knowledge with innovative approaches to help our clients remain competitive in a fast-changing regulatory environment. With a strong dedication to quality, compliance, and empowering communities, we ensure your essential services are delivered efficiently and transparently.</p>
+        </div>
+        
+        <div class="services-section">
+            <div class="services-title-wrapper">
+                <h2>CORE SERVICES</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">🏛️</div>
+                    <div>
+                        <h3 class="service-title">LOCAL GOV ADMIN</h3>
+                        <p>Comprehensive reviews of policies, local laws, and compliance records. We help streamline administrative processes, ensuring statutory obligations are met effectively.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">🤝</div>
+                    <div>
+                        <h3 class="service-title">COMMUNITY & REGULATION</h3>
+                        <p>Evaluate existing service delivery to ensure it meets community expectations. We develop short and long-term action plans linking directly to strategic community frameworks.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">💡</div>
+                    <div>
+                        <h3 class="service-title">GRANT ACQUISITION</h3>
+                        <p>Expertise in navigating securing RED Grants, housing infrastructure, and LCF initiatives. We write compelling business cases and manage grant execution to acquittal.</p>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="service-icon">📈</div>
+                    <div>
+                        <h3 class="service-title">WORKFORCE UPSKILLING</h3>
+                        <p>We provide on-the-job mentoring and establish reliable standard operating procedures, ensuring robust handover strategies so staff can confidently manage operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="competencies-section">
+            <div class="services-title-wrapper" style="margin-bottom:15px;">
+                <h2>CORE COMPETENCIES & EXPERTISE</h2>
+            </div>
+            <div style="columns: 2; column-gap: 50px; display: inline-block;">
+                <ul class="competencies-list" style="margin:0; padding:0 0 0 20px;">
+                    <li>Statutory Compliance & Policy Setup</li>
+                    <li>Elected Member Training Seminars</li>
+                    <li>Community Service Assessments</li>
+                    <li>Regulatory Framework Improvement</li>
+                    <li>Complex Grant Application Dev</li>
+                    <li>Operational Business Planning</li>
+                    <li>Crisis & Interim Gov Support</li>
+                    <li>Regional Economy Growth Plans</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bar">
+        <div class="footer-bar-left">
+            <div class="contact-item"><span class="icon">📞</span> +61 485 864 247</div>
+            <div class="contact-item"><span class="icon">✉</span> ric.halse@localto.support</div>
+        </div>
+        <div class="contact-item"><span class="icon">🔗</span> linkedin.com/in/richardhalse</div>
+    </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page page-2">
+    <!-- SVG Wavy Background resembling the screenshot -->
+    <svg class="p2-header-bg" viewBox="0 0 1000 600" preserveAspectRatio="none">
+        <path fill="var(--light-teal)" d="M0,0 L1000,0 L1000,100 C700,280 400,400 0,550 Z" />
+        <path fill="var(--primary)" d="M0,0 L1000,0 L1000,40 C750,220 300,500 0,450 Z" />
+    </svg>
+    
+    <div class="p2-content">
+        <div class="p2-left">
+            <h2>Experience and<br>Expertise</h2>
+            <ul>
+                <li>Over 15 years of operational and strategic experience in Local Government frameworks and compliance standards.</li>
+                <li>Certified professionals with deep expertise in the Local Government Act, environmental regulations, and town planning schemes.</li>
+                <li>Successful submission and rollout of multi-million dollar grant projects targeting housing, economic development, and cultural infrastructure.</li>
+                <li>Proven track record of turning around underperforming business units and rebuilding staff morale across wide Regional WA areas.</li>
+            </ul>
+        </div>
+        
+        <div class="p2-right">
+            <h2>Past Performance</h2>
+            <ol>
+                <li><strong>Local Governance & Administration:</strong> Delivered a structural departmental overhaul that increased operational efficiency and ensured 100% statutory compliance.</li>
+                <li><strong>Shire of Coolgardie Initiative:</strong> Implemented a comprehensive staff training methodology and operational strategy that empowered frontline workers and reduced administrative backlog.</li>
+                <li><strong>Regional Housing Interventions:</strong> Steered complex development frameworks and successfully negotiated state funding to unlock housing developments for key workers in the Goldfields region.</li>
+                <li><strong>Process Automation:</strong> Developed and integrated custom reporting workflows that automated mandatory reporting to the council, reducing time spent by executive managers drastically.</li>
+            </ol>
+        </div>
+    </div>
+    
+    <div class="p2-bottom">
+         <h2>Committed to Lasting Impact</h2>
+         <p>RIC is committed to understanding our clients' specific business and community challenges to deliver dependable solutions. We leverage our cutting-edge knowledge of the legislative framework and regional dynamics to help Shires navigate an evolving political and economic landscape. From policy formulation to the critical execution of frontline regulatory duties, our focus remains on strengthening transparency, operational efficiency, and empowering your local workforce for the future.</p>
+    </div>
+    
+    <div class="footer-bar p2-footer">
+        <div class="footer-bar-left">
+            <div class="contact-item"><span class="icon">📍</span> Proudly Serving Regional Western Australia</div>
+        </div>
+        <div class="contact-item"><span class="icon">🏢</span> <strong>REGIONAL INTEGRATED CONSULTANCY</strong></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIC Portal | Regional Integrated Consultancy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --teal: #1aab9b;
+            --charcoal: #3d4448;
+            --bg: #f4faf9;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--charcoal);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 2rem;
+        }
+        img.logo {
+            height: 80px;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-family: 'Big Shoulders Display', sans-serif;
+            font-weight: 900;
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #4a6665;
+            margin-bottom: 3rem;
+        }
+        .links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .link-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            border: 1px solid #d0eeeb;
+            text-decoration: none;
+            color: var(--charcoal);
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(26,171,155,0.2);
+            border-color: var(--teal);
+        }
+        .link-card h2 {
+            font-family: 'Big Shoulders Display', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin: 0;
+            color: var(--teal);
+        }
+        .link-card p {
+            font-size: 0.9rem;
+            margin: 0.5rem 0 0;
+            color: #6b8f8d;
+        }
+        @media (max-width: 480px) {
+            .links { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="assets/images/logo_hq_transparent.png" alt="RIC Logo" class="logo">
+        <h1>Governance Portal</h1>
+        <p>Strategic counsel and reporting for Regional Western Australia.</p>
+        
+        <div class="links">
+            <a href="offer.html" class="link-card">
+                <h2>Strategic Review</h2>
+                <p>Client Proposal & Scope</p>
+            </a>
+            <a href="capability.html" class="link-card">
+                <h2>Capability</h2>
+                <p>Expertise & Performance</p>
+            </a>
+        </div>
+
+        <div style="margin-top: 4rem;">
+            <a href="index.html" style="color: var(--teal); text-decoration: none; font-weight: 600; font-size: 0.9rem;">Back to Main Website</a>
+        </div>
+    </div>
+</body>
+</html>
