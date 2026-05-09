@@ -8,17 +8,17 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap');
     
     :root {
-        --primary: #1aab9b;        /* Teal arc from RIC logo */
-        --primary-dark: #148a7d;   /* Darker teal for hover/depth */
-        --charcoal: #3d4448;       /* Letterform charcoal from RIC logo */
-        --light-teal: #e6f7f5;     /* Light teal background wash */
-        --mid-teal: #d0eeeb;       /* Border / divider teal */
-        --text-dark: #3d4448;      /* Matches charcoal */
-        --text-gray: #4a6665;      /* Complementary muted teal-grey */
+        --primary: #5EFAF7;        /* Neon Cyan */
+        --primary-dark: #50DFE7;   /* Soft Aqua */
+        --charcoal: #1E003C;       /* Deep Space Purple */
+        --light-teal: #160B24;     /* Lighter Purple wash */
+        --mid-teal: #2C3A67;       /* Slate Blue */
+        --text-dark: #FFFFFF;      /* White */
+        --text-gray: #B3A5C3;      /* Muted Purple Text */
     }
     
     body {
-        background-color: #e0e0e0;
+        background-color: #050208;
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 40px;
@@ -31,7 +31,7 @@
     .page {
         width: 210mm;
         height: 297mm;
-        background: white;
+        background: #0B0510;
         box-shadow: 0 10px 30px rgba(0,0,0,0.15);
         position: relative;
         overflow: hidden;
@@ -80,7 +80,7 @@
     }
     .capability-box {
         background-color: var(--primary);
-        color: white;
+        color: var(--charcoal);
         padding: 30px 40px;
         width: 48%;
         margin-top: 10px;
@@ -105,8 +105,8 @@
         height: 360px;
         border-radius: 50%;
         border: 20px solid var(--mid-teal);
-        background-color: white;
-        background-image: url('assets/images/profile_portrait.png');
+        background-color: #0B0510;
+        background-image: url('../../STS/Images/800_bust_x2.png');
         background-size: 85%;
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -183,7 +183,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: var(--charcoal);
         font-size: 18px;
         flex-shrink: 0;
         margin-right: 12px;
@@ -264,7 +264,7 @@
     }
     .p2-left {
         width: 50%;
-        color: white;
+        color: var(--text-dark);
         padding-top: 30px;
     }
     .p2-left h2 {
@@ -326,7 +326,7 @@
     
     .p2-footer {
         background-color: var(--charcoal);
-        color: white;
+        color: var(--text-dark);
     }
 
     @media print {
@@ -342,7 +342,7 @@
 <div class="page page-1">
     <div class="top-header">
         <div class="logo-container">
-            <img src="assets/images/logo_hq_transparent.png" alt="Regional Integrated Consultancy Logo">
+            <img src="../Branding Package/logo_hq_transparent.png" alt="Regional Integrated Consultancy Logo">
             <div class="company-name">
                 Regional Integrated Consultancy
                 <span>Practical Strategic Counsel for Regional WA</span>

@@ -14,14 +14,14 @@
 <style>
   /* ── RIC Brand Tokens ───────────────────────────────────────────────────── */
   :root {
-    --teal:        #1aab9b;   /* Arc accent in logo          */
-    --teal-dark:   #148a7d;   /* Hover / depth               */
-    --charcoal:    #3d4448;   /* Letterform charcoal         */
-    --light-teal:  #e6f7f5;   /* Background wash             */
-    --mid-teal:    #d0eeeb;   /* Borders & dividers          */
-    --muted-text:  #4a6665;   /* Body copy                   */
-    --subtle-text: #6b8f8d;   /* Subtitles / labels          */
-    --bg:          #f4faf9;   /* Page background             */
+    --teal:        #5EFAF7;   
+    --teal-dark:   #50DFE7;   
+    --charcoal:    #1E003C;   
+    --light-teal:  #160B24;   
+    --mid-teal:    #2C3A67;   
+    --muted-text:  #B3A5C3;   
+    --subtle-text: #50DFE7;   
+    --bg:          #0B0510;   
   }
 
   /* ── Reset & Base ───────────────────────────────────────────────────────── */
@@ -136,14 +136,14 @@
   }
 
   .scope-card {
-    background: white;
+    background: var(--light-teal);
     border: 1px solid var(--mid-teal);
     border-radius: 1rem;
     padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     transition: box-shadow 0.2s;
   }
-  .scope-card:hover { box-shadow: 0 6px 24px rgba(26,171,155,0.15); }
+  .scope-card:hover { box-shadow: 0 6px 24px rgba(94,250,247,0.15); }
 
   .card-top {
     display: flex;
@@ -164,7 +164,7 @@
   }
   .scope-card:hover .card-icon {
     background-color: var(--teal);
-    color: white;
+    color: var(--charcoal);
   }
   .card-icon svg { width: 24px; height: 24px; }
 
@@ -180,7 +180,7 @@
   .scope-card h3 {
     font-size: 1.8rem;
     font-weight: 800;
-    color: var(--charcoal);
+    color: white;
     margin-bottom: 0rem;
     line-height: 1.1;
   }
@@ -268,7 +268,7 @@
   .timeline-section h2 {
     font-size: 1.35rem;
     font-weight: 800;
-    color: var(--charcoal);
+    color: white;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -291,16 +291,16 @@
     top: 0.35rem;
     width: 14px; height: 14px;
     border-radius: 50%;
-    background: white;
+    background: var(--charcoal);
     border: 4px solid var(--teal);
     box-shadow: 0 0 0 3px var(--bg);
   }
   .timeline-card {
-    background: white;
+    background: var(--light-teal);
     border: 1px solid var(--mid-teal);
     border-radius: 0.75rem;
     padding: 1.1rem 1.25rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   }
   .timeline-week {
     font-size: 1.1rem;
@@ -312,7 +312,7 @@
     font-family: 'Big Shoulders Display', sans-serif;
     line-height: 1;
   }
-  .timeline-card h4 { font-size: 1.5rem; font-weight: 800; color: var(--charcoal); margin-bottom: 0.2rem; }
+  .timeline-card h4 { font-size: 1.5rem; font-weight: 800; color: white; margin-bottom: 0.2rem; }
   .timeline-card p  { font-size: 0.82rem; color: var(--muted-text); }
 
   /* ── CTA Footer ─────────────────────────────────────────────────────────── */
@@ -339,10 +339,10 @@
   .cta-text h3 {
     font-size: 1.5rem;
     font-weight: 900;
-    color: white;
+    color: var(--charcoal);
     margin-bottom: 0.2rem;
   }
-  .cta-text p { font-size: 0.9rem; color: rgba(255,255,255,0.85); font-style: italic; }
+  .cta-text p { font-size: 0.9rem; color: var(--charcoal); font-style: italic; }
 
   .cta-badge {
     display: flex;
@@ -375,7 +375,7 @@
   <!-- ── Header ──────────────────────────────────────────────────────────── -->
   <header class="site-header">
     <div class="header-inner">
-      <img src="assets/images/logo_hq_transparent.png" alt="Regional Integrated Consultancy" class="header-logo">
+      <img src="logo_hq_transparent.png" alt="Regional Integrated Consultancy" class="header-logo">
       <div class="badge">Focused Assessment</div>
       <h1>Strategic Review<br><span class="accent">Proposal</span></h1>
       <p class="tagline">A streamlined, desktop-based review designed to identify key risks and deliver actionable recommendations within a single, high-impact month.</p>
@@ -598,7 +598,7 @@
     <!-- ── CTA Footer ────────────────────────────────────────────────────── -->
     <footer class="cta-footer">
       <div class="cta-left">
-        <img src="assets/images/logo_hq_transparent.png" alt="RIC" class="cta-logo">
+        <img src="logo_hq_transparent.png" alt="RIC" class="cta-logo">
         <div class="cta-text">
           <h3>Ready to start?</h3>
           <p>A focused, risk-based approach for immediate clarity.</p>
